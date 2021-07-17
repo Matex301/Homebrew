@@ -1,0 +1,493 @@
+{
+    "_meta": {
+		"sources": [
+			{
+				"json": "GodHunt",
+				"abbreviation": "GodHunt",
+				"full": "God Hunt",
+				"authors": [
+					"Matex301#7303"
+				],
+				"convertedBy": [
+					"Matex301#7303"
+				],
+				"version": "2020.1",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1602839741,
+		"dateLastModified": 1602839741
+	},
+	"optionalfeature": [
+		{
+			"name": "Overwhelming Fighting Style",
+			"source": "GodHunt",
+			"featureType": [
+				"FS:F",
+				"FS:R",
+				"FS:P",
+				"FS:B"
+			],
+			"entries": [
+				"Your weapon attacks with the heavy property score a critical hit on a roll of 19-20."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"name": "God Hunter - Dragon Slayer",
+			"source": "GodHunt",
+			"shortName": "Dragon Slayer",
+			"subclassFeatures": [
+				"Dragon Slayer|Fighter||DragonSlayer|GodHunt|3",
+				"Born Dragon Slayer|Fighter||DragonSlayer|GodHunt|7",
+				"Slayer's Challenge|Fighter||DragonSlayer|GodHunt|10",
+				"Executioner's Fancy|Fighter||DragonSlayer|GodHunt|15",
+				"Draconic Awakening|Fighter||DragonSlayer|GodHunt|18"
+			],
+			"className": "Fighter",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Dragon Slayer",
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 3,
+			"entries": [
+				"Slaying dragons is not a easy job. Those how success in such a task are extordinary peoples of great strength. Rewards for slaying one are hords of gold and fame, but for a Slayer it means more power.",
+				{
+					"name": "Power Harvest",
+					"entries": [
+						"Starting at 3rd level, you gain a Dragon Slayer Rank equal to 1.",
+						"You may absorb the power of a fallen dragon with CR equal or grater than your Dragon Slayer rank and increase it by 1."
+					]
+				},
+				{
+					"name": "Draconic Prowess",
+					"entries": [
+						"Starting at 3rd level, you gain the ability to reinforce your body with the power of foes you slay. As a bonus action you can gain 5 additional temporary hit points for each Dragon Slayer Rank, with last 1 minute.",
+						"Once you use this feature, you must finish a short or long rest before you can use it again."
+					]
+				}
+			]
+		},
+		{
+			"name": "Born Dragon Slayer",
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 7,
+			"entries": [
+				{
+					"name": "Dragonsbane",
+					"entries": [
+						"Starting at 7th level, the first melee weapon attacks agains a dragon is a critical hit."
+					]
+				},
+				{
+					"name": "Powerful Presence",
+					"entries": [
+						"Whenever you make a Charisma (Intimidation) or Charisma (Performance) check, you gain a bonus to the check equal to your Strength modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Slayer's Challenge",
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 10,
+			"entries": [
+				"Starting at 7th level, as an action, you exert an aura of your presence for the duration of 1 minute. Each enemy within 5 feet for each dragon you have slayed from you gains the following effects:",
+				"- Suffer disadvantages on attack rolls agains other creatures than you.",
+				"- Losse the ability to fly, landing immediately.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Executioner's Fancy",
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 15,
+			"entries": [
+				{
+					"name": "Merciless",
+					"entries": [
+						"Staring at 15th level, whenever you hit a creature with a weapon attack, the creature takes an extra 1d6 of the weapon type damage if the target is missing any of its hit points."
+					]
+				},
+				{
+					"name": "Whirlwind",
+					"entries": [
+						"You can use your action to make a melee attack against any number of creatures within you melee attack range, with a separate attack roll for each target."
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Awakening",
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 18,
+			"entries": [
+				"You unleash the overwhelming power you gather through merciless hunting, partly becoming a dragon. As a action, you gain the following benefits for 10 minutes:",
+				"- You again a bonus to Strength, Constitution and Dexterity saving throws equal to your Dragon Slayer Rank.",
+				"- Dragon wings appear on your back, giving you a flying speed of 40 feet.",
+				"- You have resistance to acid, cold, fire, lightning, poison and thunder damage."
+			]
+		}
+	],
+	"monster":[
+		{
+		   "name":"Drake Companion",
+		   "source":"GodHunt",
+		   "size":"L",
+		   "type":"dragon",
+		   "ac":[
+			  {
+				 "special":"14 + PB (natural armor)"
+			  }
+		   ],
+		   "hp":{
+			  "special":"6 + six times your level (the drake has a number of hit dice [d12s] equal to your level)"
+		   },
+		   "speed":{
+			  "walk":40,
+			  "fly":40
+		   },
+		   "str":16,
+		   "dex":12,
+		   "con":15,
+		   "int":8,
+		   "wis":14,
+		   "cha":8,
+		   "save":{
+			  "str":"+3 + PB",
+			  "dex":"+1 + PB",
+			  "con":"+2 + PB"
+		   },
+		   "senses":[
+			  "darkvision 60 ft."
+		   ],
+		   "passive":12,
+		   "languages":[
+			  "Draconic",
+			  "Common but can't speak"
+		   ],
+		   "trait":[
+			  {
+				 "name":"Battle Training",
+				 "entries":[
+					"In combat, the drake shares your initiative count, but it takes its turn before yours."
+				 ]
+			  }
+		   ],
+		   "action":[
+			 {
+				 "name":"Multiattack",
+				 "entries":[
+					"The drake makes a number of attacks equal to half your proficiency bonus (rounded down)."
+				 ]
+			  },
+			  {
+				 "name":"Bite",
+				 "entries":[
+					"{@atk mw} {@hit 3 + PB} to hit, reach 5 ft., one target. {@h}{@damage 1d6 + PB} piercing damage."
+				 ]
+			  }
+		   ],
+		   "senseTags":[
+			  "D"
+		   ],
+		   "languageTags":[
+			  "C",
+			  "DR"
+		   ],
+		   "damageTags":[
+			  "P"
+		   ],
+		   "miscTags":[
+			  "MW"
+		   ]
+		}
+	 ],
+	 "background": [
+		{
+			"name": "Dragon Tamer Lineage",
+			"source": "GodHunt",
+			"skillProficiencies": [
+				{
+					"animal handling": true,
+					"choose": {
+						"from": [
+							"survival",
+							"history"
+						],
+						"count": 1
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"draconic": true,
+					"any": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"vehicles (land)": true,
+					"choose": {
+						"from": [
+							"cartographer's tools",
+							"herbalism kit",
+							"navigator's tools"
+						],
+						"count": 1
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "traveler's clothes"
+						},
+						{
+							"item": "riding saddle",
+							"displayName": "a riding saddle for your drake"
+						},
+						{
+							"special": "family book about drakes"
+						},
+						{
+							"special": "pouch",
+							"containsValue": 1500
+						}
+					]
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Animal Handling}, plus one from among {@skill Survival} and {@skill History}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "{@language Draconic}, plus one of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@filter Vehicles (land)|items|source=phb;dmg|miscellaneous=mundane|type=Vehicle (land)}, plus one from among {@item Cartographer's tools|phb}, {@item Herbalism kit|phb} and {@item Navigator's tools|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "One set of {@item traveler's clothes|phb}, a {@item riding saddle|phb| riding saddle for yor drake}, a family book about drakes, and a {@item pouch|phb} containing 15 gp"
+						}
+					]
+				},
+				{
+					"name": "Feature: Dragon Rider",
+					"type": "entries",
+					"entries": [
+						"Your family practis dragon riding for generation. Every family member shares a magical bond with a minor dragon from the moment of birth. Those drakes are a part of your family, helping each other in everyday work. You have a {@creature Drake Companion|GodHunt} which accompanies you on your adventures. In dire need you can return to your hometown to obtain help for your drake companion ore knowledge about dragons."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+				
+			]
+		}
+	],
+	 "item": [
+		{
+			"name": "Heaven's Keeper",
+			"source": "GodHunt",
+			"type": "R",
+			"tier": "major",
+			"rarity": "rare",
+			"weaponCategory": "martial",
+			"reqAttune": true,
+			"dmg1": "1d8",
+			"dmgType": "R",
+			"bonusWeapon": "+1",
+			"range": "300/1200",
+			"weight": 2,
+			"entries": [
+				"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
+				{
+					"type": "entries",
+					"name": "Far Watcher",
+					"entries": [
+						"This bow attack range is doubled."
+					]
+				}
+			],
+			"property": [
+				"H",
+				"2H",
+				"A"
+			]
+		},
+		{
+			"name": "Yang",
+			"source": "GodHunt",
+			"type": "M",
+			"tier": "major",
+			"rarity": "legendary",
+			"weaponCategory": "martial",
+			"reqAttune": "by a mystic",
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "S",
+			"weight": 3,
+			"bonusSpellAttack": "+2",
+			"bonusSavingThrow": "+2",
+			"entries": [
+				"You gain a +2 bonus to spell attack rolls and to the saving throw DCs.",
+				{
+					"type": "entries",
+					"name": "Unbalance",
+					"entries": [
+						"A creature that is not attuned to {@item Yin|GodHunt} takes 1d10 radiant damage upon touching the weapon. The creature takes the damage again each time it ends its turn holding or carrying the weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ethereal Weapon (1 psi)",
+					"entries": [
+						"As a attack action, you temporarily transform the weapon into pure psionic energy. You make an attack that ignores the target's armor, requiring. The target makes a Dexterity saving throw against your’s attack roll. On a failed save, the target takes the attack's normal damage and suffers its additional effects. On a successful save, the target takes half damage from the attack but suffers no additional effects that would normally be imposed on a hit."
+					]
+				}
+			],
+			"property": [
+				"F",
+				"V"
+			]
+		},
+		{
+			"name": "Yin",
+			"source": "GodHunt",
+			"type": "M",
+			"tier": "major",
+			"rarity": "legendary",
+			"weaponCategory": "martial",
+			"reqAttune": "by a mystic",
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "S",
+			"weight": 3,
+			"bonusWeaponAttack": "+2",
+			"bonusWeaponDamage": "+2",
+			"entries": [
+				"You have a +2 bonus to all weapon attack rolls and weapon damage rolls.",
+				{
+					"type": "entries",
+					"name": "Unbalance",
+					"entries": [
+						"A creature that is not attuned to {@item Yang|GodHunt} takes 1d10 necrotic damage upon touching the weapon. The creature takes the damage again each time it ends its turn holding or carrying the weapon."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tartarean Weapon (1 psi)",
+					"entries": [
+						"When you hit a creature with the weapon, you imbue it with psionic energy. The creature must make a Wisdom saving throw. It takes 1d12 psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"property": [
+				"F",
+				"V"
+			]
+		},
+		{
+			"name": "Amorphous Clothing",
+			"source": "GodHunt",
+			"type": "OTH",
+			"tier": "major",
+			"rarity": "legendary",
+			"reqAttune": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Versatile Cut",
+					"entries": [
+						"This item takes the form of any piece of clothing the person attuned to it wants to."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Man-shape",
+					"entries": [
+						"If the creature attuned to this magic item isn't classified as humanoid it can use its action to metamorph into a humanoid form which is determined by user. The creature loses any features of its natural form."
+					]
+				}
+			],
+			"property": [
+				
+			]
+		}
+	],
+	"variant": [
+		{
+			"name": "Demonic Embrace Armor",
+			"requires": [
+				{
+					"name": "Breastplate"
+				},
+				{
+					"name": "Half Plate Armor"
+				},
+				{
+					"name": "Plate Armor"
+				},
+				{
+					"name": "Scale Mail"
+				},
+				{
+					"name": "Splint Armor"
+				}
+			],
+			"inherits": {
+				"namePrefix": "Demonic Embrace ",
+				"source": "GodHunt",
+				"rarity": "very rare",
+				"tier": "major",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Demon Wings",
+						"entries": [
+							"While you wear the armor demonic wings appear on your back, you have a flying speed equal to your walking speed. You can use the wings to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land."
+						]
+					}
+				]
+			}
+		}
+	]
+}
