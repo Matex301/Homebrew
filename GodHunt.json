@@ -22,11 +22,10 @@
 		{
 			"name": "Overwhelming Fighting Style",
 			"source": "GodHunt",
+			"isClassFeatureVariant": true,
 			"featureType": [
 				"FS:F",
-				"FS:R",
-				"FS:P",
-				"FS:B"
+				"FS:P"
 			],
 			"entries": [
 				"Your weapon attacks with the heavy property score a critical hit on a roll of 19-20."
@@ -35,7 +34,7 @@
 	],
 	"subclass": [
 		{
-			"name": "God Hunter - Dragon Slayer",
+			"name": "Dragon Slayer",
 			"source": "GodHunt",
 			"shortName": "Dragon Slayer",
 			"subclassFeatures": [
@@ -61,20 +60,44 @@
 			"entries": [
 				"Slaying dragons is not a easy job. Those how success in such a task are extordinary peoples of great strength. Rewards for slaying one are hords of gold and fame, but for a Slayer it means more power.",
 				{
-					"name": "Power Harvest",
-					"entries": [
-						"Starting at 3rd level, you gain a Dragon Slayer Rank equal to 1.",
-						"You may absorb the power of a fallen dragon with CR equal or grater than your Dragon Slayer rank and increase it by 1."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Power Harvest|Fighter||DragonSlayer|GodHunt|3"
 				},
 				{
-					"name": "Draconic Prowess",
-					"entries": [
-						"Starting at 3rd level, you gain the ability to reinforce your body with the power of foes you slay. As a bonus action you can gain 5 additional temporary hit points for each Dragon Slayer Rank, with last 1 minute.",
-						"Once you use this feature, you must finish a short or long rest before you can use it again."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Prowess|Fighter||DragonSlayer|GodHunt|3"
 				}
 			]
+		},
+		{
+			"type": "entries",
+			"name": "Power Harvest",
+			"entries": [
+				"Starting at 3rd level, you gain a Dragon Slayer Rank equal to 1.",
+				"You may absorb the power of a fallen dragon with CR equal or grater than your Dragon Slayer rank and increase it by 1."
+			],
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Draconic Prowess",
+			"entries": [
+				"Starting at 3rd level, you gain the ability to reinforce your body with the power of foes you slay. As a bonus action you can gain 5 additional temporary hit points for each Dragon Slayer Rank, with last 1 minute.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			],
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 3,
+			"header": 1
 		},
 		{
 			"name": "Born Dragon Slayer",
@@ -86,15 +109,56 @@
 			"level": 7,
 			"entries": [
 				{
-					"name": "Dragonsbane",
-					"entries": [
-						"Starting at 7th level, the first melee weapon attacks agains a dragon is a critical hit."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dragonsbane|Fighter||DragonSlayer|GodHunt|7"
 				},
 				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Powerful Presence|Fighter||DragonSlayer|GodHunt|7"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Dragonsbane",
+			"entries": [
+				"Starting at 7th level, the first melee weapon attacks agains a dragon is a critical hit."
+			],
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 7,
+			"header": 2
+		},
+		{
+			"type": "entries",
+			"name": "Powerful Presence",
+			"entries": [
+				"Whenever you make a Charisma (Intimidation) or Charisma (Performance) check, you gain a bonus to the check equal to your Strength modifier."
+			],
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 7,
+			"header": 2,
+			"effects": [
+				{
 					"name": "Powerful Presence",
-					"entries": [
-						"Whenever you make a Charisma (Intimidation) or Charisma (Performance) check, you gain a bonus to the check equal to your Strength modifier."
+					"changes": [
+						{
+							"key": "data.skills.itm.value",
+							"mode": "ADD",
+							"value": "@abilities.dex.str"
+						},
+						{
+							"key": "data.skills.prf.value",
+							"mode": "ADD",
+							"value": "@abilities.dex.str"
+						}
 					]
 				}
 			]
@@ -107,6 +171,7 @@
 			"subclassShortName": "DragonSlayer",
 			"subclassSource": "GodHunt",
 			"level": 10,
+			"header": 2,
 			"entries": [
 				"Starting at 7th level, as an action, you exert an aura of your presence for the duration of 1 minute. Each enemy within 5 feet for each dragon you have slayed from you gains the following effects:",
 				"- Suffer disadvantages on attack rolls agains other creatures than you.",
@@ -124,18 +189,42 @@
 			"level": 15,
 			"entries": [
 				{
-					"name": "Merciless",
-					"entries": [
-						"Staring at 15th level, whenever you hit a creature with a weapon attack, the creature takes an extra 1d6 of the weapon type damage if the target is missing any of its hit points."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Merciless|Fighter||DragonSlayer|GodHunt|15"
 				},
 				{
-					"name": "Whirlwind",
-					"entries": [
-						"You can use your action to make a melee attack against any number of creatures within you melee attack range, with a separate attack roll for each target."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Whirlwind|Fighter||DragonSlayer|GodHunt|15"
 				}
 			]
+		},
+		{
+			"type": "entries",
+			"name": "Merciless",
+			"entries": [
+				"Staring at 15th level, whenever you hit a creature with a weapon attack, the creature takes an extra 1d6 of the weapon type damage if the target is missing any of its hit points."
+			],
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 15,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Whirlwind",
+			"entries": [
+				"You can use your action to make a melee attack against any number of creatures within you melee attack range, with a separate attack roll for each target."
+			],
+			"source": "GodHunt",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "DragonSlayer",
+			"subclassSource": "GodHunt",
+			"level": 15,
+			"header": 1
 		},
 		{
 			"name": "Draconic Awakening",
@@ -476,14 +565,27 @@
 			"inherits": {
 				"namePrefix": "Demonic Embrace ",
 				"source": "GodHunt",
-				"rarity": "very rare",
+				"rarity": "rare",
 				"tier": "major",
+				"reqAttune": true,
 				"entries": [
 					{
 						"type": "entries",
 						"name": "Demon Wings",
 						"entries": [
 							"While you wear the armor demonic wings appear on your back, you have a flying speed equal to your walking speed. You can use the wings to fly for up to 4 hours, all at once or in several shorter flights, each one using a minimum of 1 minute from the duration. If you are flying when the duration expires, you descend at a rate of 30 feet per round until you land."
+						]
+					}
+				],
+				"effects": [
+					{
+						"name": "Demonic Embrace",
+						"changes": [
+							{
+								"key": "data.attributes.movement.fly",
+								"mode": "UPGRADE",
+								"value": "@attributes.movement.walk"
+							}
 						]
 					}
 				]
