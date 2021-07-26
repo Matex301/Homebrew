@@ -598,7 +598,7 @@
 					"type": "image",
 					"href": {
 						"type": "external",
-						"url": "example.com/image.jpg"
+						"url": "https://raw.githubusercontent.com/Matex301/Homebrew/main/image/katana.svg"
 					}
 				}
 			],
