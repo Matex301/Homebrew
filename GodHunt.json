@@ -540,6 +540,72 @@
 			"property": [
 				
 			]
+		},
+		{
+			"name": "Crimson Cursed Glaive",
+			"source": "GodHunt",
+			"type": "M",
+			"tier": "major",
+			"rarity": "artifact",
+			"weaponCategory": "martial",
+			"reqAttune": true,
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"weight": 6,
+			"entries": [
+				"You have a +1/+2/+3 bonus to attack and damage rolls made with this magic weapon.",
+				{
+					"type": "entries",
+					"name": "Deathbringer",
+					"entries": [
+						"When you damage a creature with an attack using this magic weapon, the target can't regain hit points until the start of your next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bloodseeker",
+					"entries": [
+						"Whenever you reduce a creature to 0 hit points using this weapon, you gain 1d8/2d6/12 temporary hit points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lifesbane",
+					"entries": [
+						"The axe deals an extra 1d4/1d6/1d8 necrotic damage to creatures that aren't constructs or undead."
+					]
+				}
+			],
+			"property": [
+				"H",
+				"R",
+				"2H"
+			]
+		},
+		{
+			"name": "Katana",
+			"source": "GodHunt",
+			"type": "M",
+			"rarity": "none",
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "S",
+			"weight": 3,
+			"value": 5000,
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "example.com/image.jpg"
+					}
+				}
+			],
+			"property": [
+				"F",
+				"V"
+			]
 		}
 	],
 	"variant": [
