@@ -593,15 +593,17 @@
 			"dmgType": "S",
 			"weight": 3,
 			"value": 5000,
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/Matex301/Homebrew/main/image/katana.svg"
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Matex301/Homebrew/main/image/katana.svg"
+						}
 					}
-				}
-			],
+				]
+			},
 			"property": [
 				"F",
 				"V"
