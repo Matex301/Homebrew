@@ -454,22 +454,29 @@
 			"dmg2": "1d10",
 			"dmgType": "S",
 			"weight": 3,
-			"bonusSpellAttack": "+2",
-			"bonusSavingThrow": "+2",
+			"bonusSpellAttack": "+3",
+			"bonusSavingThrow": "+3",
 			"entries": [
-				"You gain a +2 bonus to spell attack rolls and to the saving throw DCs.",
+				"You gain a +3 bonus to spell attack rolls and to the saving throw DCs.",
 				{
 					"type": "entries",
 					"name": "Unbalance",
 					"entries": [
-						"A creature that is not attuned to {@item Yin|GodHunt} takes 1d10 radiant damage upon touching the weapon. The creature takes the damage again each time it ends its turn holding or carrying the weapon."
+						"A creature that is not attuned to {@item Yin|GodHunt} takes 2d6 radiant damage upon touching the weapon. A creature takes damage each time it ends its turn holding or carrying the weapon."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Ethereal Weapon (1 psi)",
 					"entries": [
-						"As a attack action, you temporarily transform the weapon into pure psionic energy. You make an attack that ignores the target's armor, requiring. The target makes a Dexterity saving throw against your’s attack roll. On a failed save, the target takes the attack's normal damage and suffers its additional effects. On a successful save, the target takes half damage from the attack but suffers no additional effects that would normally be imposed on a hit."
+						"As a attack , you temporarily transform the weapon into pure psionic energy. You make an attack that ignores the target's armor, requiring. The target makes a Dexterity saving throw against your’s attack roll. On a failed save, the attack hits, on a successful save, the attack misses."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mystical Protection (3 psi)",
+					"entries": [
+						"When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to damage of that type including the triggering damage until the end of your next turn"
 					]
 				}
 			],
@@ -490,22 +497,29 @@
 			"dmg2": "1d10",
 			"dmgType": "S",
 			"weight": 3,
-			"bonusWeaponAttack": "+2",
-			"bonusWeaponDamage": "+2",
+			"bonusWeaponAttack": "+3",
+			"bonusWeaponDamage": "+3",
 			"entries": [
-				"You have a +2 bonus to all weapon attack rolls and weapon damage rolls.",
+				"You have a +3 bonus to all weapon attack rolls.",
 				{
 					"type": "entries",
 					"name": "Unbalance",
 					"entries": [
-						"A creature that is not attuned to {@item Yang|GodHunt} takes 1d10 necrotic damage upon touching the weapon. The creature takes the damage again each time it ends its turn holding or carrying the weapon."
+						"A creature that is not attuned to {@item Yang|GodHunt} takes 2d6 necrotic damage upon touching the weapon. A creature takes  damage each time it ends its turn holding or carrying the weapon."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Tartarean Weapon (1 psi)",
 					"entries": [
-						"When you hit a creature with the weapon, you imbue it with psionic energy. The creature must make a Wisdom saving throw. It takes 1d12 psychic damage on a failed save, or half as much damage on a successful one."
+						"When you hit a creature with a weapon attack, you imbue it with psionic energy. The creature must make a Wisdom saving throw taking 1d12 psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rend Protection (3 psi)",
+					"entries": [
+						"When a creature's resistance reduces the damage you deal, you can cause that damage to ignore the creature's resistance."
 					]
 				}
 			],
