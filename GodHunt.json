@@ -672,5 +672,78 @@
 				]
 			}
 		}
+	],
+	"spell": [
+		{
+			"name": "Augment Obsidian",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "chunk of obsidian"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"source": "GodHunt",
+			"entries": [
+				"You infuse a melee weapon you touch with a outer layer of sharp and brittle obsidian shards.",
+				"For the duration, the weapon requires at least 15 Strength to wield without disadvantage.",
+				"Attacks with the weapon deal an additional damage equal to your spellcasting ability modifier.",
+				"Each time the affected weapon hits with an attack, bits of obsidian break away, after 4 hits the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 2th level or higher, the number of hits increases by 1 for every level above 1st."
+					]
+				}
+			]
+		}
 	]
 }
