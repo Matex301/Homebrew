@@ -560,7 +560,7 @@
 			"source": "GodHunt",
 			"type": "M",
 			"tier": "major",
-			"rarity": "artifact",
+			"rarity": "none",
 			"weaponCategory": "martial",
 			"reqAttune": true,
 			"dmg1": "1d10",
@@ -606,20 +606,57 @@
 			"dmg2": "1d10",
 			"dmgType": "S",
 			"weight": 3,
-			"value": 5000,
+			"value": 10000,
 			"hasFluff": true,
-			"images": [
-				{
-					"type": "image",
-					"href": {
-						"type": "external",
-						"url": "https://raw.githubusercontent.com/Matex301/Homebrew/main/image/katana.png"
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/Matex301/Homebrew/main/image/katana.png"
+						}
 					}
-				}
-			],
+				]
+			},
 			"property": [
 				"F",
 				"V"
+			]
+		},
+		{
+			"name": "Deathveil",
+			"source": "GodHunt",
+			"type": "MA",
+			"tier": "major",
+			"rarity": "none",
+			"reqAttune": "by a pact of the blade warlock",
+			"ac": 16,
+			"entries": [
+				"You have a +1 bonus to AC while wearing this armor.",
+				{
+					"type": "entries",
+					"name": "Pact Armor",
+					"entries": [
+						"You can use your action to summon this pact armour on or off your body. You are proficient with it while you wear it.",
+						"Your pact armour disappears if it is more than 15 feet away from you for 1 minute or more. It also disappears if you dismiss the armour (no action required). If you die or break attunement, the armour appears at your feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hex Defence",
+					"entries": [
+						"The magic you channel helps ward off any attacks. While you maintain concentration on a spell, you have a +2 bonus to AC."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eldritch Grace",
+					"entries": [
+						"Your patron's magic bolsters you, to spread it will. Gain a bonus to all saving throw equal to your Charisma modifier (with a minimum bonus of +1).",
+						"You can't benefit from this ability and aura of protection feature at the same time."
+					]
+				}
 			]
 		}
 	],
