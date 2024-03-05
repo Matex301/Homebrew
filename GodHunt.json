@@ -625,11 +625,37 @@
 			]
 		},
 		{
+			"name": "No-dachi",
+			"source": "GodHunt",
+			"type": "M",
+			"rarity": "none",
+			"weaponCategory": "martial",
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"weight": 6,
+			"value": 17000,
+			"property": [
+				"2H",
+				"H",
+				"F",
+				"S"
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"You have disadvantage when you use a no-dachi to attack, if your Strength score is lower than 15."
+					]
+				}
+			]
+		},
+		{
 			"name": "Deathveil",
 			"source": "GodHunt",
 			"type": "MA",
-			"tier": "major",
-			"rarity": "none",
+			"rarity": "very rare",
+			"weight": 25,
 			"reqAttune": "by a pact of the blade warlock",
 			"ac": 16,
 			"entries": [
@@ -638,8 +664,9 @@
 					"type": "entries",
 					"name": "Pact Armor",
 					"entries": [
-						"You can use your action to summon this pact armour on or off your body. You are proficient with it while you wear it.",
-						"Your pact armour disappears if it is more than 15 feet away from you for 1 minute or more. It also disappears if you dismiss the armour (no action required). If you die or break attunement, the armour appears at your feet."
+						"You are proficient with it while you wear it.",
+						"You can dismiss it (no action required), shunting it into an extradimensional space, and it appears on you whenever you summon it using your bonus action.",
+						"The armor disappears if it is more than 15 feet away from you for 1 minute or more. If you die or break attunement the armour falls out of the extradimensional space, appearing at your feet."
 					]
 				},
 				{
