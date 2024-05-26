@@ -412,7 +412,7 @@
 			]
 		}
 	],
-	 "item": [
+	"item": [
 		{
 			"name": "Heaven's Keeper",
 			"source": "GodHunt",
@@ -807,6 +807,75 @@
 						"If you cast this spell using a spell slot of 2th level or higher, the number of hits increases by 1 for every level above 1st."
 					]
 				}
+			]
+		},
+		{
+			"name": "Mantle of Arcane Mastery",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"source": "GodHunt",
+			"entries": [
+				"You envelop yourself in a mantle of raw arcane power, providing protection from magical elements and causing your spells to strike with greater ferocity. This mantle appears in colors of your magical power, a swirling aura that crackles with latent energy.",
+				"Choose one of the following damage types: cold, fire, lightning, necrotic, radian. You gain the following benefits until the spell ends:",
+				{
+					"type": "list",
+					"items": [
+						"You are immune to damage of the chosen type.",
+						"Gain a flying speed of 40 feet.",
+						"Creatures making a saving throw against a spell you cast cannot benefit from advantage on that saving throw.",
+						"Damage dealt by yours spells ignores resistance and immunity to the chosen type.",
+						"Whenever you cast the first spell each turn that deals damage of the chosen type, you can add {@damage 3d8} to one of the spell's damage rolls. This additional damage does not apply to damage rolls that automatically affect their targets without requiring an attack roll or saving throw."
+					]
+				}
+			],
+			"damageImmune": [
+				"cold",
+				"fire",
+				"lightning",
+				"necrotic",
+				"radian"
 			]
 		}
 	]
