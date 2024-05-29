@@ -810,6 +810,72 @@
 			]
 		},
 		{
+			"name": "False Grace",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bottle of alcohol or distilled spirits"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+
+					}
+				]
+			},
+			"source": "GodHunt",
+			"entries": [
+				"Your spell bolsters your allies with a necromantic facsimile of life.",
+				"Choose up to three creatures within range. Each target gains {@dice 3d4} + 12 temporary hit points for the duration."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you gain 5 additional temporary hit points for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
 			"name": "Mantle of Arcane Mastery",
 			"level": 6,
 			"school": "T",
@@ -858,14 +924,14 @@
 			"source": "GodHunt",
 			"entries": [
 				"You envelop yourself in a mantle of raw arcane power, providing protection from magical elements and causing your spells to strike with greater ferocity. This mantle appears in colors of your magical power, a swirling aura that crackles with latent energy.",
-				"Choose one of the following damage types: cold, fire, lightning, necrotic, radian. You gain the following benefits until the spell ends:",
+				"Choose one of the following damage types: cold, fire, lightning, necrotic, radiant. You gain the following benefits until the spell ends:",
 				{
 					"type": "list",
 					"items": [
 						"You are immune to damage of the chosen type.",
 						"Gain a flying speed of 40 feet.",
 						"Creatures making a saving throw against a spell you cast cannot benefit from advantage on that saving throw.",
-						"Damage dealt by yours spells ignores resistance and immunity to the chosen type.",
+						"Damage dealt by your spells ignores resistance and immunity to the chosen type.",
 						"Whenever you cast the first spell each turn that deals damage of the chosen type, you can add {@damage 3d8} to one of the spell's damage rolls. This additional damage does not apply to damage rolls that automatically affect their targets without requiring an attack roll or saving throw."
 					]
 				}
